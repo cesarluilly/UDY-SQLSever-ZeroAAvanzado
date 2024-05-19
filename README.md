@@ -68,6 +68,32 @@ Cursor podria ser como una especie de tabla en memoria a la cual voy a poder rec
 
 ### Video 106 Creando el SP de Descuentos por Stock
 
+#### **Nuevo tema aprendido CURSOR_STATUS('global', 'ProductCursor')**
+
+El uso de `CURSOR_STATUS` en SQL Server te permite determinar el estado de un cursor, lo que es útil para manejar adecuadamente los cursores en tus procedimientos almacenados, especialmente en bloques `TRY...CATCH`. Aquí te explico cómo funciona `CURSOR_STATUS` y cómo evaluarlo para asegurar que el cursor se cierre correctamente.
+
+##### Funcionamiento de `CURSOR_STATUS`
+
+La función `CURSOR_STATUS` devuelve el estado del cursor especificado. Los parámetros de `CURSOR_STATUS` son:
+
+* **global/local:** Especifica si el cursor es global o local.
+* **cursor_name:** El nombre del cursor.
+
+##### Valores Devueltos por `CURSOR_STATUS`
+
+`CURSOR_STATUS` puede devolver los siguientes valores:
+
+* **1:** El cursor está abierto.
+* **0:** El cursor está declarado, pero no abierto.
+* **-1:** El cursor no existe o ha sido cerrado.
+
+Lo que haremos
+
+* 
+* ![1716129779291](image/README/1716129779291.png)
+  ![1716134983822](image/README/1716134983822.png)
+* ![1716135028915](image/README/1716135028915.png)
+
 ### Video 107 Creando el SP para actualizar Stock desde una venta
 
 ### Video 108 Creando el SP para listar sellers de mayor venta de acuerdo a un parametrov
