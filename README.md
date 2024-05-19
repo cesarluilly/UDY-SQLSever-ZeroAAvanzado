@@ -195,6 +195,19 @@ Por que es importante, imaginense que ustedes tienen que pasarle a los programad
 
 ### Video 136 Son realmente tablas en Memoria? existen las tablas temporales en disco?
 
+Esto es para resolver unas dudas en relacion al pasado y la actualidad.
+
+En el pasado se podia elegir si queriamos tablas en memoria o en disco, pero lo cierto es que SQL SERVER ha evolucionado tanto que maneja la Dualidad, por lo tanto cuando nosotros creamos tabla con numeral o doble numeral(#, ##), lo que hace SQL SERVER es darle preponderancia a la memoria.
+
+Ahora si lo que estamos grabando en esas tablas temporales compromete a la memoria, por lo tanto lo que hace SQL SERVER es empezar a grabar parte de esos datos o la totalidad de estos datos en disco, `lo graba en una carpeta que es tempdb ` y en esta carpeta va alojado todo lo que son tablas temporales, inclusive tablas de variables(las que son creadas dentro de StoreProcedure a traves del cursor).
+
+Cuando son tablas pequeñas las empieza a alojar en memoria, pero cuando el conjunto de recursos que requiere esa tabla hace que se comprometa la memoria, entonces empieza a grabar en disco en la carpeta tempdb.
+
+* Por lo tanto con lo que respecta a tablas temporales locales, globales y de variable
+  * No hay que asumir que estaran cien por ciento en memoria
+  * No hay que asumir que estaran cien por ciento en disco
+* Ya que eso lo maneja y se encarga el motor de base de datos
+
 ### Video
 
 ### Video
