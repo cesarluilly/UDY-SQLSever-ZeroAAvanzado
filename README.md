@@ -110,9 +110,23 @@ Lo que haremos
 
 ![1716152157797](image/README/1716152157797.png)
 
-### Video 109
+## SECCION 17: Manejo de Transacciones
 
-### Video 110
+### Video 119 Que son las transacciones?
+
+* Son un conjunto de operaciones que se ejecutan como si fuera una sola operacion, ese conjunto se operaciones se maneja como una sola unidad.
+* Por lo tanto no hay manera que haya inconsitencias de datos ya que todo se maneja en Unidad
+* Una transaccion esta aislada de otras transacciones y los registros que va a modificar los tiene de alguna manera bloqueadas o aisladas para que otra transaccion no lo utilize, en operaciones donde se
+* Si no se utilizan transacciones, puede haber problemas de inconsistencias.
+
+###### SCOPE_IDENTITY()
+
+![1716153970888](image/README/1716153970888.png)
+
+
+### Video 110 Creando un SP con Transacciones
+
+![1716155183529](image/README/1716155183529.png)
 
 ### Video
 
