@@ -102,7 +102,13 @@ Lo que haremos
 
 ![1716148325653](image/README/1716148325653.png)
 
-### Video 108 Creando el SP para listar sellers de mayor venta de acuerdo a un parametrov
+### Video 108 Creando el SP para listar sellers de mayor venta de acuerdo a un parametro
+
+![1716148656283](image/README/1716148656283.png)
+
+![1716152017380](image/README/1716152017380.png)
+
+![1716152157797](image/README/1716152157797.png)
 
 ### Video 109
 
