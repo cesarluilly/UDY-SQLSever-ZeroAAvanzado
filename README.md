@@ -54,10 +54,15 @@ Cursor podria ser como una especie de tabla en memoria a la cual voy a poder rec
 
 ![1716127320778](image/README/1716127320778.png)
 
-
-
-
 ### Video 105 Manejo de Errores
+
+* Ejemplo 1
+  * ![1716129317943](image/README/1716129317943.png)
+* Ejemplo 2
+  * ![1716129509859](image/README/1716129509859.png)
+* Ejemplo 3
+  * ![1716129617243](image/README/1716129617243.png)
+
 
 ## Seccion 14: Creando Stored Procedures reales
 
