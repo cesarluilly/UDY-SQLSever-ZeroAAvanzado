@@ -59,18 +59,18 @@ Cursor podria ser como una especie de tabla en memoria a la cual voy a poder rec
 
 ### Video 106 Creando el SP de Descuentos por Stock
 
-#### **Nuevo tema aprendido CURSOR_STATUS('global', 'ProductCursor')**
+**Nuevo tema aprendido CURSOR_STATUS('global', 'ProductCursor')**
 
 El uso de `CURSOR_STATUS` en SQL Server te permite determinar el estado de un cursor, lo que es útil para manejar adecuadamente los cursores en tus procedimientos almacenados, especialmente en bloques `TRY...CATCH`. Aquí te explico cómo funciona `CURSOR_STATUS` y cómo evaluarlo para asegurar que el cursor se cierre correctamente.
 
-##### Funcionamiento de `CURSOR_STATUS`
+**Funcionamiento de `CURSOR_STATUS`**
 
 La función `CURSOR_STATUS` devuelve el estado del cursor especificado. Los parámetros de `CURSOR_STATUS` son:
 
 * **global/local:** Especifica si el cursor es global o local.
 * **cursor_name:** El nombre del cursor.
 
-##### Valores Devueltos por `CURSOR_STATUS`
+**Valores Devueltos por `CURSOR_STATUS`**
 
 `CURSOR_STATUS` puede devolver los siguientes valores:
 
@@ -110,7 +110,7 @@ Lo que haremos
 * Una transaccion esta aislada de otras transacciones y los registros que va a modificar los tiene de alguna manera bloqueadas o aisladas para que otra transaccion no lo utilize, en operaciones donde se
 * Si no se utilizan transacciones, puede haber problemas de inconsistencias.
 
-###### SCOPE_IDENTITY()
+**SCOPE_IDENTITY()**
 
 ![1716153970888](image/README/1716153970888.png)
 
@@ -157,7 +157,7 @@ Truco: Supongamos que nosotros queremos crear una tabla en memoria que tenga la 
 
 Por que es importante, imaginense que ustedes tienen que pasarle a los programadores el codigo Create de esta tabla porque lo tienen que meter dentro de la aplicacion
 
-###### Truco para copiar la escructura de una tabla
+**Truco para copiar la escructura de una tabla**
 
 * Por lo tanto hacemos click en Clipboard
 
