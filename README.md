@@ -28,11 +28,21 @@ Ejecutamos el StoreProcedure con **EXEC** y lo corremos con F5 o el boton de Pla
 
 ![1716082269233](image/README/1716082269233.png)
 
-
-
 ### Video 101 Parametros & Variables
 
+* Para modificar el StoreProcedure hay que darle en Modify
+  * ![1716084118189](image/README/1716084118189.png)
+* Agregamos Variables Inicializadas y No inicializadas
+  * ![1716084232769](image/README/1716084232769.png)
+* Corremos
+  * ![1716084402391](image/README/1716084402391.png)
+
 ### Video 102 Escructuras de Decision (IF ELSE, CASE, EXISTS)
+
+
+
+
+
 
 ### Video 103 Escructuras de Iteracion (WHILE, RETURN & BREAK)
 
