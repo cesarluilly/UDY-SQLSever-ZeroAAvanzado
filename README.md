@@ -10,14 +10,6 @@ La forma de tener un StoreProcedure, es entrando a la carpeta de Programmability
 
 ![1716080285760](image/README/1716080285760.png)
 
-
-
-
-
-
-
-
-
 ![1716081452670](image/README/1716081452670.png)
 
 Creamos nuestro primer StoreProcedure y ejecutamos
@@ -62,7 +54,6 @@ Cursor podria ser como una especie de tabla en memoria a la cual voy a poder rec
   * ![1716129509859](image/README/1716129509859.png)
 * Ejemplo 3
   * ![1716129617243](image/README/1716129617243.png)
-
 
 ## Seccion 14: Creando Stored Procedures reales
 
@@ -123,7 +114,6 @@ Lo que haremos
 
 ![1716153970888](image/README/1716153970888.png)
 
-
 ### Video 110 Creando un SP con Transacciones
 
 ![1716155183529](image/README/1716155183529.png)
@@ -167,12 +157,17 @@ Truco: Supongamos que nosotros queremos crear una tabla en memoria que tenga la 
 
 Por que es importante, imaginense que ustedes tienen que pasarle a los programadores el codigo Create de esta tabla porque lo tienen que meter dentro de la aplicacion
 
+###### Truco para copiar la escructura de una tabla
+
 * Por lo tanto hacemos click en Clipboard
 
 ![1716157236244](image/README/1716157236244.png)
 
-#### * Lo que hara es copiarlo en el Portapapeles, y eso es lo que hace falta para emular y crear la tabla temporal Product
+* Lo que hara es copiarlo en el Portapapeles, y eso es lo que hace falta para emular y crear la tabla temporal Product
   * ![1716157417143](image/README/1716157417143.png)
+
+###### Tabla temporal Local
+
 * Agregamos el numeral para indicar que se trata de una tabla temporal local y corremos el script
   * ![1716157563264](image/README/1716157563264.png)
 
@@ -186,12 +181,13 @@ Por que es importante, imaginense que ustedes tienen que pasarle a los programad
 
 **VENTAJAS QUE TENEMOS CON TABLAS TEMPORALES, es que al estar alojado en memoria la consulta de datos va a ser una ejecucion muy rapida y de esa manera voy a poder darle uso**
 
-#### Creamos una session nueva(Pestaña de query nueva) Agregamos el DOBLE numeral para indicar que se trata de una tabla temporal GLOBAL y corremos el script
+###### Tabla temporal Global
+
+Creamos una session nueva(Pestaña de query nueva) Agregamos el DOBLE numeral para indicar que se trata de una tabla temporal GLOBAL y corremos el script
 
 * ![1716158978875](image/README/1716158978875.png)
 
 **NOTA.- Lo bueno de las tablas temporales globales es que puedo crear adentro un StoreProcedure, puedo grabarle informacion y cuando el store procedure termine, esa tabla va a seguir estando en memoria, mientras que la sesion que la creo, no necesariamente tiene que ser una persona, la sesion que la creo este vigente y este activa voy a seguir viendo esa tabla Global**
-
 
 ### Video 136 Son realmente tablas en Memoria? existen las tablas temporales en disco?
 
