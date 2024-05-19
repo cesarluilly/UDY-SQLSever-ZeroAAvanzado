@@ -50,6 +50,13 @@ Ejecutamos el StoreProcedure con **EXEC** y lo corremos con F5 o el boton de Pla
 
 ### Video 104 Uso de Cursores
 
+Cursor podria ser como una especie de tabla en memoria a la cual voy a poder recorrer registro por registro
+
+![1716127320778](image/README/1716127320778.png)
+
+
+
+
 ### Video 105 Manejo de Errores
 
 ## Seccion 14: Creando Stored Procedures reales
