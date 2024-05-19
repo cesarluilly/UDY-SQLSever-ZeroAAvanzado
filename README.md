@@ -141,12 +141,12 @@ Lo que haremos
   * Locales #
     * Son creadas con el prefijo numeral
     * Pueden ser accedidas por subconsultas o procediientos almacenados ejecutados dentro de una misma session
-      * Es decir, que si nosotros nos hemos logueado por lo tanto se ah creado una session dentro de la instancia de SQL SERVER, entonces solo nosotros vamos a poder ver esa tabla temporal, por lo tanto otros usuarios no pueden ver tablas de temporales que no fueron creados por ellos mismos
+      * Es decir, que si nosotros nos hemos logueado(`NOTA: hasta ese punto todavia no tenemos una session, para tener una session necesitamos abrir un nuevo file de query que este conectado a una DB`) y creamos el file de query para tener creado una session dentro de la instancia de SQL SERVER, entonces solo nosotros vamos a poder ver esa tabla temporal, por lo tanto otros usuarios no pueden ver tablas de temporales que no fueron creados por ellos mismos
   * Globales ##
     * Se crean con doble numeral
     * Son visibles para cualquier session dentro del mismo servidor
       * Mientras el usuario que creo la tabla Global, los demas sessiones pueden ver esa tabla temporal
-      * Si el creador de esa tabla temporal se desloguea, por lo tanto la tabla temporal tambien desaparece y por lo tanto las otras sessiones ya no podran verlo
+      * Si el creador de esa tabla temporal se cierra su session, por lo tanto la tabla temporal tambien desaparece y por lo tanto las otras sessiones ya no podran verlo
   * Tablas Temporales de Sesion
     * Son diseñados para ser mas eficientes en entornos con altas demanda de concurrencia y rendimiento
     * Al igual que las locales son solo visibles en la session local
@@ -161,9 +161,37 @@ Las tablas temporales son extremadamente utilies para realizar tareas complejas 
   * Pruebas de consultas complejas
   * Procesamiento de grandes volumenes de informacion antes de una insercion final de los mismos
 
-
-
 ### Video 135 Creamos Tablas Temporales
+
+Truco: Supongamos que nosotros queremos crear una tabla en memoria que tenga la misma escructura de la tabla Product.
+
+Por que es importante, imaginense que ustedes tienen que pasarle a los programadores el codigo Create de esta tabla porque lo tienen que meter dentro de la aplicacion
+
+* Por lo tanto hacemos click en Clipboard
+
+![1716157236244](image/README/1716157236244.png)
+
+#### * Lo que hara es copiarlo en el Portapapeles, y eso es lo que hace falta para emular y crear la tabla temporal Product
+  * ![1716157417143](image/README/1716157417143.png)
+* Agregamos el numeral para indicar que se trata de una tabla temporal local y corremos el script
+  * ![1716157563264](image/README/1716157563264.png)
+
+**NOTA: Cuando hablamos de sesion no nos referimos al Login para conectarme a la base de datos, nos referimos al query abierto donde hacemos consultas, cada archivo de query es una session, cada una de las pestañas es una session diferente**
+
+![1716157772422](image/README/1716157772422.png)
+
+* Hacemos una consulta a la tabla temporal local en la sesion donde creamos la misma tabla temporal local
+
+  * ![1716158194739](image/README/1716158194739.png)
+
+**VENTAJAS QUE TENEMOS CON TABLAS TEMPORALES, es que al estar alojado en memoria la consulta de datos va a ser una ejecucion muy rapida y de esa manera voy a poder darle uso**
+
+#### Creamos una session nueva(Pestaña de query nueva) Agregamos el DOBLE numeral para indicar que se trata de una tabla temporal GLOBAL y corremos el script
+
+* ![1716158978875](image/README/1716158978875.png)
+
+**NOTA.- Lo bueno de las tablas temporales globales es que puedo crear adentro un StoreProcedure, puedo grabarle informacion y cuando el store procedure termine, esa tabla va a seguir estando en memoria, mientras que la sesion que la creo, no necesariamente tiene que ser una persona, la sesion que la creo este vigente y este activa voy a seguir viendo esa tabla Global**
+
 
 ### Video 136 Son realmente tablas en Memoria? existen las tablas temporales en disco?
 
