@@ -128,11 +128,44 @@ Lo que haremos
 
 ![1716155183529](image/README/1716155183529.png)
 
-### Video
+## Seccion 19: Tablas Temporales en SQL SERVER
 
-### Video
+### Video 134 Que es una tabla temporal y que tipos de tablas temporales existe?
 
-### Video
+* Una tabla temporal es una escructura de almacenamiento que permite almacenar datos de manera temporal durante la ejecucion de una consulta o una session especifica de SQL SERVER
+* Estas tablas son ideales para almacenar resultados intermedios
+* Cuando vimos la parte de StoreProcedure, vimos que teniamos como una especie de tabla temporal que la iterabamos a traves de un cursor.
+* Estas tablas temporales ya estan determinados como tablas y objetos del sistema
+* Son ideales para almacenar resultados intermedios que necesitas manipular o consultar varias veses dentro de un bloque de transacciones o una session especifica
+* TENEMOS 3 TIPOS DE TABLAS TEMPORALES
+  * Locales #
+    * Son creadas con el prefijo numeral
+    * Pueden ser accedidas por subconsultas o procediientos almacenados ejecutados dentro de una misma session
+      * Es decir, que si nosotros nos hemos logueado por lo tanto se ah creado una session dentro de la instancia de SQL SERVER, entonces solo nosotros vamos a poder ver esa tabla temporal, por lo tanto otros usuarios no pueden ver tablas de temporales que no fueron creados por ellos mismos
+  * Globales ##
+    * Se crean con doble numeral
+    * Son visibles para cualquier session dentro del mismo servidor
+      * Mientras el usuario que creo la tabla Global, los demas sessiones pueden ver esa tabla temporal
+      * Si el creador de esa tabla temporal se desloguea, por lo tanto la tabla temporal tambien desaparece y por lo tanto las otras sessiones ya no podran verlo
+  * Tablas Temporales de Sesion
+    * Son diseñados para ser mas eficientes en entornos con altas demanda de concurrencia y rendimiento
+    * Al igual que las locales son solo visibles en la session local
+* SQL Server 2022 Mantiene el concepto de variable de tabla
+  * Se puede considerar como otro tipo de escructura temporal
+  * Se declaran como `DECLARE @TablaVariable TABLE` que son las que manejamos en StoreProcedure a traves del cursor
+
+Las tablas temporales son extremadamente utilies para realizar tareas complejas de manipulacion de datos en SQL SERVER
+
+* Nos permite las operaciones como
+  * Depuracion de datos
+  * Pruebas de consultas complejas
+  * Procesamiento de grandes volumenes de informacion antes de una insercion final de los mismos
+
+
+
+### Video 135 Creamos Tablas Temporales
+
+### Video 136 Son realmente tablas en Memoria? existen las tablas temporales en disco?
 
 ### Video
 
