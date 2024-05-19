@@ -39,6 +39,10 @@ Ejecutamos el StoreProcedure con **EXEC** y lo corremos con F5 o el boton de Pla
 
 ### Video 102 Escructuras de Decision (IF ELSE, CASE, EXISTS)
 
+* If
+  * ![1716089954345](image/README/1716089954345.png)
+* CASE
+  * ![1716089876648](image/README/1716089876648.png)
 
 
 
