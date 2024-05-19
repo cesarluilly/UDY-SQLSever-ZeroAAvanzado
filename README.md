@@ -44,11 +44,9 @@ Ejecutamos el StoreProcedure con **EXEC** y lo corremos con F5 o el boton de Pla
 * CASE
   * ![1716089876648](image/README/1716089876648.png)
 
-
-
-
-
 ### Video 103 Escructuras de Iteracion (WHILE, RETURN & BREAK)
+
+![1716091190709](image/README/1716091190709.png)
 
 ### Video 104 Uso de Cursores
 
