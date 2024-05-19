@@ -10,6 +10,7 @@ GO
 -- Description:	<Description,,>
 -- =============================================
 -- Prefijo_NumeroParaDocumentacion_NombreDeStoreProcedure
+-- "CREATE" y despues se cambia a "ALTER" en caso de querer modificarlo
 ALTER PROCEDURE [dbo].[SP_0001_Inicio]
 	@MinPrice Decimal(10, 2) = 0,
 	@MaxPrice Decimal(10, 2) = 0

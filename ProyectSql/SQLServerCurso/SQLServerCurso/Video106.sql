@@ -8,6 +8,8 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
+-- Prefijo_NumeroParaDocumentacion_NombreDeStoreProcedure
+-- "CREATE" y despues se cambia a "ALTER" en caso de querer modificarlo
 ALTER PROCEDURE SP_0004_ApplyDiscount
 	@DiscountAbove100 DECIMAL(4, 2),
 	@DiscountBetween50And100 DECIMAL(4, 2),

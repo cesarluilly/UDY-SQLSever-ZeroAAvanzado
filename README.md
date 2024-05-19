@@ -96,6 +96,12 @@ Lo que haremos
 
 ### Video 107 Creando el SP para actualizar Stock desde una venta
 
+![1716145239017](image/README/1716145239017.png)
+
+![1716148252758](image/README/1716148252758.png)
+
+![1716148325653](image/README/1716148325653.png)
+
 ### Video 108 Creando el SP para listar sellers de mayor venta de acuerdo a un parametrov
 
 ### Video 109

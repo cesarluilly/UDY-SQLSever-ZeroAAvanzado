@@ -10,6 +10,7 @@ GO
 -- Description:	<Description,,>
 -- =============================================
 -- Prefijo_NumeroParaDocumentacion_NombreDeStoreProcedure
+-- "CREATE" y despues se cambia a "ALTER" en caso de querer modificarlo
 ALTER PROCEDURE SP_0003_ManejoErrores
 AS
 BEGIN
